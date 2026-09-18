@@ -49,7 +49,7 @@ const Navbar = () => {
   // fetch the product catalogue once (used for search)
   useEffect(() => {
     axios
-      .get('http://localhost:3389/products')
+      .get('https://craft-bazaaar.onrender.com/products')
       .then((res) => setAllProducts(res.data))
       .catch(() => setAllProducts([]));
   }, []);
