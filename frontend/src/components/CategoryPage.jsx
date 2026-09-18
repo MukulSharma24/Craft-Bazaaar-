@@ -28,7 +28,7 @@ function CategoryPage({ title, subtitle, endpoint }) {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:3389/products/${endpoint}`);
+        const res = await axios.get(`https://craft-bazaaar.onrender.com/products/${endpoint}`);
         if (active) {
           setProducts(res.data);
           setError('');
