@@ -20,10 +20,11 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'client/build/index.html'));
 // });
-app.use(express.json());- 
 app.use(cors({
-  origin:"https://craft-bazaaar.vercel.app",
-   "http://localhost:3000" // for local dev
+  origin: [
+    "https://craft-bazaaar.vercel.app",
+    "http://localhost:3000"
+  ]
 }));
 
 // Place an order
