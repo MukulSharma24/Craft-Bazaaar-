@@ -27,6 +27,8 @@ app.use(cors({
   ]
 }));
 
+
+
 // Place an order
 app.post('/order', async (req, res) => {
   const { productId, phone, email, address } = req.body;
