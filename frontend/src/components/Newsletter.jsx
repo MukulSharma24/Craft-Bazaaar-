@@ -16,7 +16,7 @@ function Newsletter() {
     setError('');
     setMessage('');
     try {
-      const response = await axios.post('http://localhost:3389/subscribe', { email });
+      const response = await axios.post('https://craft-bazaaar.onrender.com/subscribe', { email });
       setMessage(response.data.message);
     } catch (error) {
       if (error.response) {
