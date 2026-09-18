@@ -1,0 +1,47 @@
+.hero-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 32px 52px;
+  background-image: linear-gradient(to bottom, #ffe8f0 0%, #f3e6f6 100%);
+  overflow: hidden;
+}
+
+.hero-container img {
+  width: 100%;
+  max-width: 1180px;            /* scaled so the whole graphic stays fully visible */
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow:
+    0 34px 60px -22px rgba(105, 79, 142, 0.55),
+    0 16px 30px -12px rgba(0, 0, 0, 0.20);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: hero-float 6s ease-in-out infinite;
+}
+
+.hero-container img:hover {
+  transform: translateY(-6px) scale(1.01);   /* straight, just lifts up */
+  box-shadow:
+    0 46px 80px -24px rgba(105, 79, 142, 0.6),
+    0 20px 40px -14px rgba(0, 0, 0, 0.22);
+  animation-play-state: paused;
+}
+
+/* gentle straight up-and-down float — no tilt */
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 24px 16px 32px;
+  }
+  .hero-container img {
+    border-radius: 14px;
+    animation: none;
+  }
+}

@@ -1,0 +1,97 @@
+.ProfileSection.popup-menu {
+  background-image: linear-gradient(to bottom, #ffd9ea 0%, #f0d4ea 100%);
+  color: #4d3a63;
+  width: 270px;
+  padding: 22px 20px;
+  box-shadow: 0 18px 44px rgba(105, 79, 142, 0.28);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.ProfileSection.popup-menu h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+  color: #4d3a63;
+  font-family: "Poppins", serif;
+}
+
+.ProfileSection.popup-menu > p {
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  color: #7a6588;
+}
+
+/* kill the wrapping <Link> underline */
+.ProfileSection a {
+  text-decoration: none;
+}
+
+.login-signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-image: linear-gradient(to right, #B692C2 0%, #694F8E 100%);
+  color: #fff !important;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.login-signup-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(105, 79, 142, 0.35);
+}
+
+.logout-btn {
+  background-image: linear-gradient(to right, #d96d8a 0%, #a23a5b 100%) !important;
+}
+
+.profile-email {
+  font-size: 0.82rem;
+  color: #7a6588;
+  margin: -10px 0 16px;
+  word-break: break-all;
+}
+
+.profile-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-menu li {
+  margin: 0;
+}
+
+.profile-menu a {
+  color: #4d3a63;
+  display: flex;
+  align-items: center;
+  padding: 11px 12px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* clean WHITE hover highlight — clearly visible */
+.profile-menu a:hover,
+.profile-menu a:focus {
+  background-color: #ffffff;
+  color: #694F8E;
+}
+
+.new-tag {
+  background-color: #ff7a3d;
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+}

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f0f0f0; /* Soft background color for contrast */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container img {
+  width: 100%;
+  max-width: 1200px; /* Keeps the image from getting too large on big screens */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  .container img {
+    max-width: 900px; /* Scales down for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container img {
+    max-width: 700px; /* Scales down for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container img {
+    max-width: 100%; /* Full-width for small screens */
+  }
+}

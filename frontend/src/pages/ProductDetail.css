@@ -1,0 +1,166 @@
+/* ===== Craft Bazaaar — Product Detail ===== */
+.product-detail-page {
+  background: #fff8fb;
+  min-height: 70vh;
+  padding: 48px 24px 60px;
+}
+
+.product-detail-card {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 14px 40px rgba(105, 79, 142, 0.15);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-detail-media {
+  background: #f5ecf5;
+  aspect-ratio: 1 / 1;
+}
+
+.product-detail-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-detail-info {
+  padding: 36px 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #B692C2;
+  margin: 0 0 8px;
+}
+
+.product-detail-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.6rem;
+  color: #5c3d82;
+  margin: 0 0 6px;
+}
+
+.product-detail-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #694F8E;
+  margin: 0 0 18px;
+}
+
+.product-detail-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+.product-detail-meta li {
+  font-size: 0.95rem;
+  color: #6b5a7a;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3e6f2;
+}
+
+.product-detail-meta span {
+  display: inline-block;
+  width: 90px;
+  color: #9d8bab;
+  font-size: 0.85rem;
+}
+
+.product-detail-desc {
+  font-family: "Georgia", serif;
+  color: #6b5a7a;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.product-detail-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pd-add-cart,
+.pd-buy-now {
+  flex: 1;
+  border-radius: 30px;
+  padding: 13px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.pd-add-cart {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #B692C2 0%, #694F8E 100%);
+}
+
+.pd-add-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(105, 79, 142, 0.35);
+}
+
+.pd-add-cart.added {
+  background-image: linear-gradient(to right, #6bbf8a 0%, #3f9d6a 100%);
+}
+
+.pd-buy-now {
+  border: 1.5px solid #694F8E;
+  background: transparent;
+  color: #694F8E;
+}
+
+.pd-buy-now:hover {
+  background: #694F8E;
+  color: #fff;
+}
+
+.pd-back {
+  margin-top: auto;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #9d8bab;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.pd-back:hover {
+  color: #694F8E;
+}
+
+.product-detail-message {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  color: #6b4f8a;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(105, 79, 142, 0.1);
+  padding: 50px 24px;
+}
+
+@media (max-width: 760px) {
+  .product-detail-card {
+    grid-template-columns: 1fr;
+  }
+}

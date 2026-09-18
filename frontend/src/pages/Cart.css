@@ -1,0 +1,221 @@
+/* ===== Craft Bazaaar — Cart page ===== */
+.cart-page {
+  background: #fff8fb;
+  min-height: 70vh;
+  padding-bottom: 60px;
+}
+
+.cart-hero {
+  text-align: center;
+  padding: 46px 20px 56px;
+  background-image: linear-gradient(135deg, #ffe8e2 0%, #ffc7e2 45%, #B692C2 100%);
+  color: #5c3d82;
+}
+
+.cart-hero-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.4rem;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(105, 79, 142, 0.15);
+}
+
+.cart-content {
+  max-width: 960px;
+  margin: -30px auto 0;
+  padding: 0 24px;
+}
+
+/* empty state */
+.cart-empty {
+  text-align: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(105, 79, 142, 0.1);
+  padding: 60px 24px;
+}
+
+.cart-empty p {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  color: #6b4f8a;
+  margin-bottom: 22px;
+}
+
+.cart-shop-btn,
+.cart-checkout-btn,
+.cart-clear-btn {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 26px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cart-shop-btn,
+.cart-checkout-btn {
+  color: #fff;
+  background-image: linear-gradient(to right, #B692C2 0%, #694F8E 100%);
+}
+
+.cart-shop-btn:hover,
+.cart-checkout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(105, 79, 142, 0.35);
+}
+
+/* items list */
+.cart-items {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(105, 79, 142, 0.1);
+  overflow: hidden;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #f3e6f2;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #f5ecf5;
+  flex-shrink: 0;
+}
+
+.cart-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item-name {
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+  color: #4d3a63;
+  margin: 0 0 4px;
+}
+
+.cart-item-vendor {
+  font-size: 0.82rem;
+  color: #8a7a9c;
+  margin: 0;
+}
+
+.cart-item-price {
+  font-weight: 700;
+  color: #694F8E;
+  min-width: 80px;
+  text-align: right;
+}
+
+/* qty stepper */
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-stepper button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid #B692C2;
+  background: #fff;
+  color: #694F8E;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.qty-stepper button:hover {
+  background: #B692C2;
+  color: #fff;
+}
+
+.qty-stepper span {
+  min-width: 22px;
+  text-align: center;
+  font-weight: 600;
+  color: #4d3a63;
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: #c98ba8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 6px;
+  transition: color 0.2s ease;
+}
+
+.cart-item-remove:hover {
+  color: #e0507e;
+}
+
+/* summary */
+.cart-summary {
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(105, 79, 142, 0.1);
+  padding: 22px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cart-summary-total {
+  font-size: 1.3rem;
+  color: #4d3a63;
+}
+
+.cart-summary-total strong {
+  color: #694F8E;
+}
+
+.cart-summary-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.cart-clear-btn {
+  background: transparent;
+  border: 1.5px solid #d7b8d0;
+  color: #8a6a86;
+}
+
+.cart-clear-btn:hover {
+  background: #f7ecf5;
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-wrap: wrap;
+  }
+  .cart-item-price {
+    text-align: left;
+  }
+  .cart-summary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cart-summary-actions {
+    justify-content: space-between;
+  }
+}

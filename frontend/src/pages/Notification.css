@@ -1,0 +1,161 @@
+/* ===== Craft Bazaaar — Notifications page ===== */
+.notif-page {
+  background: #fff8fb;
+  min-height: 70vh;
+  padding-bottom: 60px;
+}
+
+.notif-hero {
+  text-align: center;
+  padding: 56px 20px 66px;
+  background-image: linear-gradient(135deg, #ffe8e2 0%, #ffc7e2 45%, #B692C2 100%);
+  color: #694F8E;
+}
+
+.notif-hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #7a5c9e;
+}
+
+.notif-hero-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  margin: 0;
+  color: #5c3d82;
+  text-shadow: 0 2px 8px rgba(105, 79, 142, 0.15);
+}
+
+.notif-content {
+  max-width: 760px;
+  margin: -35px auto 0;
+  padding: 0 24px;
+}
+
+.notif-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.notif-count {
+  font-size: 0.9rem;
+  color: #8a7a9c;
+}
+
+.notif-clear {
+  background: none;
+  border: 1.5px solid #d7b8d0;
+  color: #8a6a86;
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.notif-clear:hover {
+  background: #f7ecf5;
+}
+
+.notif-list {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(105, 79, 142, 0.1);
+  overflow: hidden;
+}
+
+.notif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #f3e6f2;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  position: relative;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-item:hover {
+  background: #fbf4fb;
+}
+
+.notif-item.unread {
+  background: #f7edfa;
+}
+
+.notif-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.notif-icon.order { background: linear-gradient(135deg, #84fab0, #38b48b); }
+.notif-icon.offer { background: linear-gradient(135deg, #f78ca0, #f9748f); }
+.notif-icon.ship  { background: linear-gradient(135deg, #8fd3f4, #5aa9e6); }
+.notif-icon.info  { background: linear-gradient(135deg, #B692C2, #694F8E); }
+
+.notif-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.notif-title {
+  margin: 0 0 3px;
+  font-size: 1rem;
+  color: #4d3a63;
+  font-weight: 600;
+}
+
+.notif-message {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b5a7a;
+  line-height: 1.45;
+}
+
+.notif-time {
+  font-size: 0.78rem;
+  color: #b09bc0;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.notif-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #694F8E;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.notif-empty {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+  color: #6b4f8a;
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(105, 79, 142, 0.1);
+}
+
+@media (max-width: 768px) {
+  .notif-hero-title { font-size: 3rem; }
+}

@@ -1,0 +1,119 @@
+/* Help.css */
+
+.help-me {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.help-me h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.faq h2, .contact-support h2 {
+  font-size: 28px;
+  color: #007BFF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq li {
+  margin-bottom: 20px;
+}
+
+.faq h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.faq h3::before {
+  content: '❓';
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  color: #007BFF;
+}
+
+.faq p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.contact-support {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-support p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-support button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-support button:hover {
+  background-color: #1ebe57;
+}
+
+.contact-support a {
+  text-decoration: none;
+}
+
+.contact-support a button {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .help-me {
+    padding: 15px;
+  }
+
+  .help-me h1 {
+    font-size: 28px;
+  }
+
+  .faq h2, .contact-support h2 {
+    font-size: 24px;
+  }
+
+  .faq h3 {
+    font-size: 20px;
+  }
+
+  .contact-support p {
+    font-size: 16px;
+  }
+
+  .contact-support button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

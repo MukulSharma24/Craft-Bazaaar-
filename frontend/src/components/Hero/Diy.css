@@ -1,0 +1,71 @@
+.diy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 30px;
+  background: url('../photo/diy4.jpeg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+
+  .outlined-text {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: transparent; 
+    margin-bottom: 10px;
+  }
+  
+  .diy-container h1 {
+    font-size: 3.5rem; /* Slightly smaller base font size */
+    color: black; /* Neutral color */
+    margin-bottom: 20px;
+    line-height: 2;
+  }
+  
+  .diy-container img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .diy-container img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  @media (min-width: 768px) {
+    .diy-container {
+      flex-direction: row;
+      text-align: left;
+      padding: 60px;
+    }
+  
+    .diy-container h1 {
+      font-size: 4rem; /* Slightly smaller font size for medium screens */
+      margin-right: 40px;
+    }
+  
+    .diy-container img {
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .diy-container h1 {
+      font-size: 4rem; /* Slightly smaller font size for large screens */
+    }
+  
+    .outlined-text {
+      font-size: 80px; /* Slightly smaller outline text on bigger screens */
+    }
+  }
+  

@@ -1,0 +1,54 @@
+.sidebar {
+  width: 250px;
+  height: 100vh; /* Full height of the viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #ffc7e2 0%, #E3A5C7 100%);
+  color: black;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 1000;
+  overflow-y: auto; /* Enables scrolling */
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover {
+  color: #ff3f6c;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  margin: 15px 0;
+}
+
+.product-list li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.product-list li a:hover {
+  color: #ff3f6c;
+}

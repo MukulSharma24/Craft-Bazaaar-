@@ -1,0 +1,128 @@
+.newsletter-container {
+  background-image: linear-gradient(to bottom, #E3A5C7 0%, #B692C2 100%);
+  padding: 44px 24px;
+}
+
+.newsletter-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* left cluster: icon + heading/text */
+.newsletter-content .img {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-content i {
+  font-size: 3em;
+  color: #fff;
+}
+
+.newsletter-content .update {
+  text-align: left;
+  flex: 1;
+  min-width: 200px;
+}
+
+.newsletter-content h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2em;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.newsletter-content p {
+  font-size: 1em;
+  color: #f3e9f4;
+  margin: 0;
+}
+
+/* right: subscribe form */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 12px 16px;
+  border: 1px solid #d9bfe0;
+  border-radius: 30px;
+  font-size: 0.95em;
+  width: 260px;
+  outline: none;
+}
+
+.newsletter-form input:focus {
+  border-color: #694F8E;
+  box-shadow: 0 0 0 3px rgba(105, 79, 142, 0.15);
+}
+
+.newsletter-form button {
+  padding: 12px 26px;
+  border: none;
+  border-radius: 30px;
+  background-color: #694F8E;
+  color: #fff;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+  background-color: #55407a;
+  transform: translateY(-1px);
+}
+
+.error-message {
+  color: #ffe3ec;
+  font-size: 0.9em;
+  width: 100%;
+  text-align: center;
+}
+
+.success-message {
+  color: #eafff0;
+  font-size: 0.9em;
+  width: 100%;
+  text-align: center;
+}
+
+/* responsive */
+@media (max-width: 820px) {
+  .newsletter-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .newsletter-content .update {
+    text-align: center;
+  }
+  .newsletter-form input {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
