@@ -22,7 +22,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 // });
 app.use(express.json());- 
 app.use(cors({
-  origin:"http://localhost:3000"
+  origin:"https://craft-bazaaar.vercel.app/"
 }));
 
 // Place an order
